@@ -93,7 +93,7 @@ var Kubrick = new Class({
 	
 	hide: function(e) {
 		var target = e.target;
-		if (target != this.element && target != this.colourPicker && !this.colourPicker.hasChild(target))
+		if (target != this.element && target != this.colourPicker && !this.colourPicker.contains(target))
 			this.colourPicker.dispose();
 	},
 	
